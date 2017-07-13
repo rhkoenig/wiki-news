@@ -1,0 +1,18 @@
+<template name="article">
+  Add an Article:<br>
+  Title:<input type="text" id="js-Title"><br>
+  Content:<input type="text" id="js-Content"><br>
+  Author:<input type="text" id="js-Author"><br>
+  <input type="submit" id="js-submit" class="btn btn-info btn-sm">
+  <ul>
+    {{#each article in articlelist}}
+      {{> articleinfo f=article}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="articleinfo">
+  <li>{{f.Title}}  {{f.Content}}
+     by {{f.Author}}
+  </li>
+</template>
