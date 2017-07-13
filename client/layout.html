@@ -1,8 +1,59 @@
 <Template name="layout">
-  <h1>Wikinews</h1>
-  <a href="/" class="btn btn-info btn-sm">Home</a>
-  <a href="/chat" class="btn btn-info btn-sm">news</a>
-  <hr>
+  <img src="newlogo.jpg" align="center">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/chat">Chat</a></li>
+      </ul>
+    </div>
+  </nav>
+
   {{>yield}}
   <hr>
+  <!-- Footer Stuff -->
+  <footer id="myFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2 class="logo"><a href="#"> LOGO </a></h2>
+            </div>
+            <div class="col-sm-2">
+                <h5>Title 1</h5>
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Title 2</h5>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Title 3</h5>
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <div class="social-networks">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                </div>
+                <button type="button" class="btn btn-default">Button</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2017 Copyright Text </p>
+    </div>
+  </footer>
 </Template>
