@@ -1,21 +1,13 @@
 <template name="chat">
-  <div class="jumbotron">
-    <h1>News</h1>
-    <p>Welcome to the news room! Be nice, be professional!</p>
-  </div>
 
-    <hr>
-    <h2>Recent News</h2>
-    <ul>
-      {{#each chat in chatlines}}
-      <li>
-        / <i>{{chat.createdAt}}</i>
-        <br>
-        {{chat.text}}
-        <hr>
-      </li>
+    <h2><center>Recent News</center></h2>
+    {{#each chat in chatlines}}
+    <div class="bs-callout bs-callout-default">
+      <h4>{{chat.title}}</h4>
+      <p><i>{{chat.createdAt}}</i></p>
+      <p>{{chat.text}}</p>
+    </div>
       {{/each}}
-    </ul>
     <hr>
 
 
