@@ -1,2 +1,2 @@
-Template.test.helpers({
+Template.forgotpassword.helpers({
 })
