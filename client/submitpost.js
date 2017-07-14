@@ -17,6 +17,10 @@ Template.submitpost.events({
     var chatline = {text:theText, createdAt:new Date(), createdBy:Meteor.userId()};
     console.log(theText);
     Chats.insert(chatline);
+    $('#js-chatinput').val(''); //Resets textbox area
+    //Creates a fading alert
+    $(".alert").removeClass("in").show();
+	  $(".alert").delay(400).addClass("in").fadeOut(7500);
   },
 
 })
