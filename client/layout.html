@@ -1,32 +1,49 @@
+<Template name="layout">
 <head>
   <title>
     Pressing Populus
   </title>
 </head>
 
-
-<Template name="layout">
+<body>
+<center>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/chat">Recent News</a></li>
-        <li><a href="/submitpost">Submit New Post</a></li>
-        <li><a href="/progress">Our Progress So Far</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/termsofservice">Terms of Service</a></li>
+
+      <!-- Title to navbar + responsive design -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Pressing Populus</a>
+      </div>
+
+      <!-- Main navbar links -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/chat">Recent News</a></li>
+          <li><a href="/submitpost">Submit New Post</a></li>
+          <li><a href="/progress">Our Progress So Far</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/termsofservice">Terms of Service</a></li>
       </ul>
+
       <!-- Login/Sign up buttons -->
       <ul class="nav navbar-nav navbar-right">
-        <li>{{> loginButtons}}<object width="170" data="spacer.jpg"></object></li>
+        <li class="login-buttons">{{> loginButtons}}</li>
       </ul>
     </div>
-  </nav>
 
+  </div>
+  </nav>
+</center>
+</body>
   {{>yield}}
-  <hr>
-  <!-- Footer Stuff -->
+  <!-- Footer Stuff
   <footer id="myFooter">
     <div class="container">
         <div class="row">
@@ -67,5 +84,9 @@
     <div class="footer-copyright">
         <p>© Pressing Populus 2017 </p>
     </div>
+  -->
+  <footer id="footerid">
+    <hr>
+      <p>test</p>
   </footer>
 </Template>

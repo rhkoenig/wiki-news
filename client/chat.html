@@ -1,14 +1,26 @@
 <template name="chat">
 
     <h2><center>Recent News</center></h2>
-    {{#each chat in chatlines}}
-    <div class="bs-callout bs-callout-default">
-      <h4><b>{{chat.title}}</b></h4>
-      <p><i>{{chat.createdAt}}</i></p>
-      <p>{{chat.text}}</p>
+
+    <div class="container-fluid ">
+      <div class="row">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-30">
+            {{#each chat in chatlines}}
+            <div class="bs-callout bs-callout-default">
+              <h4><b>{{chat.title}}</b></h4>
+              <p><i>{{chat.createdAt}}</i></p>
+              <p>{{chat.text}}</p>
+            </div>
+              {{/each}}
+            <hr>
+        </div>
+
+      </div>
     </div>
-      {{/each}}
-    <hr>
+
 
 
 

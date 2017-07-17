@@ -1,3 +1,15 @@
+.login-buttons {
+	margin-top:14px;
+	margin-right:150px;
+	margin-bottom:14px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* OLD FOOTER CSS
 #myFooter {
     background-color: #3c3d41;
     color: white;
@@ -96,3 +108,5 @@ body{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
 }
+
+*/
