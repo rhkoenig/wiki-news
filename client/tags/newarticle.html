@@ -1,0 +1,56 @@
+<template name="newarticle">
+
+  <!-- Tests if user is logged in -->
+  {{#if currentUser}}
+
+  <!-- Alert Message -->
+  <div class="alert alert-success fade">
+    <button type="button" class="close" data-dismiss="success">×</button>
+    Article Submitted! <a href="/articles/all" class="alert-link">Read your post here..</a>
+  </div>
+
+  <!-- Page Heading -->
+  <h1><center>Submit your News Post here!</center></h1>
+  <br>
+  <hr>
+
+  <!-- New Post Form -->
+  <div class="container">
+    <form>
+      <div class="form-group row">
+        <label for="titlepost">News Title</label>
+        <input type="text" class="form-control" id="js-title" placeholder="This will be the title of your post">
+      </div>
+      <!-- News Textbox -->
+      <div class="form-group row">
+      <label for="exampleTextarea">Post your news...</label>
+      <textarea class="form-control" id="js-thepost" rows="5"></textarea>
+      </div>
+
+      <!-- Tag Input -->
+      <div class="form-group row">
+        <label for="tags">Relevant Tags</label>
+        <input type="text" class="form-control" id="js-tags" placeholder="Ex. New York">
+      </div>
+
+
+
+      <br>
+
+      <!-- The Submit Button -->
+      <div class="form-group row">
+      <button type="submit" class="btn btn-primary" id="js-submit">
+        <span class="glyphicon glyphicon-pencil" style="padding-right:5px"></span>
+        <span>Submit News</span>
+      </button>
+      </div>
+  </form>
+</div>
+
+{{else}}
+<!-- If user is not logged in -> Set an alert -->
+<div class="alert alert-danger">
+  <strong>Please log in to submit a post</strong>
+</div>
+{{/if}}
+</template>
