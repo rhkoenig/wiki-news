@@ -8,7 +8,7 @@ Template.submitpost.helpers({
 
 })
 
-
+/*
 Template.submitpost.events({
   "click #js-chatsubmit": function(event){
     event.preventDefault();
@@ -27,3 +27,4 @@ Template.submitpost.events({
   },
 
 })
+*/
