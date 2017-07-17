@@ -1,11 +1,11 @@
 const team =
   [
-    {name:"Garrett Mallinson"    , email: "pressing.populus@gmail.com" },
-    {name:"Alexander Chen"    , email: "pressing.populus@gmail.com" },
-    {name:"Andrew Chen"    , email: "pressing.populus@gmail.com" },
-    {name:"Ryan Koenig"    , email: "pressing.populus@gmail.com" },
-    {name:"Jack Liu"    , email: "pressing.populus@gmail.com" },
-    {name:"Amari Lewis"    , email: "pressing.populus@gmail.com" },
+    {name:"Garrett Mallinson"    ,role: "CFO"   , email: "pressing.populus@gmail.com" },
+    {name:"Alexander Chen"    ,role: "" , email: "pressing.populus@gmail.com" },
+    {name:"Andrew Chen"    ,role: ""  , email: "pressing.populus@gmail.com" },
+    {name:"Ryan Koenig"    ,role: ""  , email: "pressing.populus@gmail.com" },
+    {name:"Jack Liu"    ,role: "" , email: "pressing.populus@gmail.com" },
+    {name:"Amari Lewis"    ,role: "", email: "pressing.populus@gmail.com" },
   ];
 
 Template.about.helpers(
