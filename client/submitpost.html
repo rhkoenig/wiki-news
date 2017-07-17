@@ -14,7 +14,7 @@
     <form>
       <div class="form-group row">
         <label for="exampleInputEmail1">Current Date:</label>
-         <input type="text" id="disabledTextInput" class="form-control" placeholder="This is useless right now">
+         <input type="text" id="disabledTextInput" class="form-control" value="{{now}}">
       </div>
       <div class="form-group row">
         <label for="exampleInputEmail1">Email address</label>
@@ -23,8 +23,19 @@
       </div>
       <div class="form-group row">
         <label for="titlepost">News Title</label>
-        <input type="text" class="form-control" id="js-posttitle" placeholder="This one actually works">
+        <input type="text" class="form-control" id="js-posttitle" >
       </div>
+
+      <div class="form-group row">
+        <label for="lat">Latitude</label>
+        <input type="text" class="form-control" id="js-lat" value="{{position.lat}}">
+      </div>
+
+      <div class="form-group row">
+        <label for="lng">Longitude</label>
+        <input type="text" class="form-control" id="js-lng" value="{{position.lng}}">
+      </div>
+
       <!-- News Textbox -->
       <div class="form-group row">
       <label for="exampleTextarea">Post your news...</label>
