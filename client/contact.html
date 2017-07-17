@@ -1,16 +1,17 @@
 <template name="contact">
-  <br>
-  <br>
-  <br>
-  <img src="Untitled.png" alt="" style="position:absolute; top:-100px; left:400px; width:600px;height:700px;">
-  <p1>Submit your issue or recommendation</p1>
+  <div class="alert alert-success fade">
+    Article Submitted! <a href="/chat" class="alert-link">Read your post here..</a>
+  </div>
+
+  <img src="Untitled.png" alt="" style="position:absolute; top:0px; left:400px; width:600px;height:700px;">
+  <marquee behavior="scroll" direction="left">Submit your issue or recommendation</marquee>
   <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
       <span class="input-group-btn">
-        <div style="position: absolute; top:200px; left:540px; width:200px; height:25px">
-        <button class="btn btn-default" type="button">submit</button>
-        <input type="text" class="form-control" placeholder="Type Response...">
+        <div style="position: absolute; top:243px; left:740px; width:200px; height:25px">
+        <button class="btn btn-default" type="button" id="js-bugsubmit">submit</button>
+        <input type="text" class="form-control" id="js-yum" placeholder="Type Response..." style="position: absolute; top:5px; left:-200px; width:200px; height:25px">
         </div>
       </span>
 
