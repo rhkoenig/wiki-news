@@ -1,6 +1,6 @@
 Template.articles.helpers({
   articles() {
-    return Articles.find({  },{limit:20, sort:{createdAt:-1}});
+    return Articles.find({  },{sort:{createdAt: -1}});
   }
 })
 
