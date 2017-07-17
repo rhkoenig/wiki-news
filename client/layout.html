@@ -1,17 +1,48 @@
 <Template name="layout">
+<head>
+  <title>
+    Pressing Populus
+  </title>
+</head>
 
-  <img src="newlogo.jpg" align="center">
+<body>
+<center>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/chat">Chat</a></li>
+
+      <!-- Title to navbar + responsive design -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Pressing Populus</a>
+      </div>
+
+      <!-- Main navbar links -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/chat">Recent News</a></li>
+          <li><a href="/submitpost">Submit New Post</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/termsofservice">Terms of Service</a></li>
+      </ul>
+
+      <!-- Login/Sign up buttons -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="login-buttons">{{> loginButtons}}</li>
       </ul>
     </div>
+
+  </div>
   </nav>
+</center>
+</body>
   {{>yield}}
-  <hr>
-  <!-- Footer Stuff -->
+  <!-- Footer Stuff
   <footer id="myFooter">
     <div class="container">
         <div class="row">
@@ -35,25 +66,26 @@
                 </ul>
             </div>
             <div class="col-sm-2">
-                <h5>Title 3</h5>
-                <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
+               <h5>Support</h5>
+               <ul>
+                  <li><a href="/forgotpassword">Forgot Password</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
                   <li><a href="#">Link 3</a></li>
-                </ul>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+              <br>
+                <button type="button" class="btn btn-default"><a href="/account">Sign up</a></button>
+                <button type="button" class="btn btn-default"><a href="/test">Sign in</a></button>
             </div>
-            <div class="col-sm-3">
-                <div class="social-networks">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                </div>
-                <button type="button" class="btn btn-default">Button</button>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="footer-copyright">
-        <p>© 2017 Copyright Text </p>
+        <p>© Pressing Populus 2017 </p>
     </div>
+  -->
+  <footer id="footerid">
+    <hr>
+      <p>test</p>
   </footer>
 </Template>

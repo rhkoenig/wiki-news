@@ -1,0 +1,38 @@
+<template name="articles">
+  <h2><center>Recent News</center></h2>
+
+<div class="container-fluid ">
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-10 pad">
+	{{#each a in all}}
+	  {{> article article = a}}
+	{{/each}}
+</div>
+	<div class="col-md-1"></div>
+</div>
+</div>
+</template>
+
+<template name="article">
+  <div class="bs-callout bs-callout-default">
+    <h4><b>{{article.title}}</b></h4>
+    <p><i>{{article.createdAt}}</i></p>
+    <p>{{article.thepost}}</p>
+    <br>
+    <p><b>Tags:</b> {{article.tag}}</p>
+  </div>
+
+<!--
+	<span class="article-name">{{article.title}}</span> -
+	<br>
+	{{article.thepost}}
+	<br>
+	<span class="article-tags"><span class="article-name">Categories:</span> {{article.tag}}</span>
+  {{#if owner article}}
+ <span class="glyphicon glyphicon-remove fbrmpost" id="remove" aria-hidden="true" style="cursor:pointer; color:red;"></span>
+  {{/if}}
+	<br>
+<hr>
+ -->
+</template>

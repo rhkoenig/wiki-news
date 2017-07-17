@@ -1,25 +1,26 @@
 <template name="chat">
-  <div class="jumbotron">
-    <h1>CS152aj Chat Extravanza!!</h1>
-    <p>Welcome to the CS152aj Chat room!  Be nice, Be Professional!</p>
-  </div>
 
-    <input type="text"  class="js-chatinput" >
-    <br>
-    <button class="btn btn-info btn-large js-chatsubmit">Submit</button>
-    <hr>
-    <h2>Last Five Chats:</h2>
-    <ul>
-      {{#each chat in chatlines}}
-      <li>
-        / <i>{{chat.createdAt}}</i>
-        <br>
-        {{chat.text}}
-        <hr>
-      </li>
-      {{/each}}
-    </ul>
-    <hr>
+    <h2><center>Recent News</center></h2>
+
+    <div class="container-fluid ">
+      <div class="row">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-30">
+            {{#each chat in chatlines}}
+            <div class="bs-callout bs-callout-default">
+              <h4><b>{{chat.title}}</b></h4>
+              <p><i>{{chat.createdAt}}</i></p>
+              <p>{{chat.text}}</p>
+            </div>
+              {{/each}}
+            <hr>
+        </div>
+
+      </div>
+    </div>
+
 
 
 
