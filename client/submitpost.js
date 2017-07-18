@@ -1,3 +1,4 @@
+/*
 Template.submitpost.helpers({
   chatlines: function(){
     // return the last five chats
@@ -7,6 +8,7 @@ Template.submitpost.helpers({
                         sort: {createdAt: -1}})},
 
 })
+*/
 
 /*
 Template.submitpost.events({
