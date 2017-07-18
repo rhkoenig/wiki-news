@@ -16,5 +16,18 @@ Template.articles.events({
   "click span#remove" (event, instance) {
     console.dir(this);
     Articles.remove(this.article._id);
-  }
+  },
+
+  "click #findtagsubmit" (event, instance) {
+    console.log("Test1");
+    var tagsearch = $("#findtag").val(); //Return search value
+    var finaltagsearch = "/articles/" + tagsearch;
+    console.log(tagsearch);
+    Router.go(finaltagsearch);
+  },
+
+
+
+
+
 })
