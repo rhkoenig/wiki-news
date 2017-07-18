@@ -1,24 +1,68 @@
 <template name="about">
-<h1>About</h1>
-
-Here is our team:
-<table class="table table-bordered">
-	<thead>
-		<tr><th>About us</th><th>email</th></tr>
-	</thead>
-	<tbody>
-		{{#each person in team}}
-  		{{> teamrow t=person}}
-		{{/each}}
-	</tbody>
+<h1><center>About Us</center></h1>
+<table class="table table-bordered table-responsive">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-xs-12">
+				<br>
+				<div class="panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading"><center><b>About our Team</b></center></div>
+				  <div class="panel-body">
+				    <p>We are a bunch of high school students who, as part of the Brandeis App Design Program, created a platform for the average, everyday
+						person to post specific news concerning a specific location</p>
+					</div>
+				</div>
+	      <div class="table-responsive">
+	        <table summary="This is our team" class="table table-bordered table-hover">
+	          <thead>
+	            <tr>
+	              <th><center>Name</center></th>
+	              <th><center>Position</center></th>
+	              <th><center>Contact Info</center></th>
+	            </tr>
+	          </thead>
+	          <tbody>
+	            <tr>
+	              <td><center>Jack Liu</center></td>
+	              <td><center>CEO</center></td>
+	              <td><center>jliu.ppopulus@gmail.com</center></td>
+	            </tr>
+	            <tr>
+	              <td><center>Garrett Mallinson</center></td>
+	              <td><center>CFO</center></td>
+	              <td><center>gmallinson.ppopulus@gmail.com</center></td>
+	            </tr>
+	            <tr>
+	              <td><center>Amari Lewis</center></td>
+	              <td><center>COO</center></td>
+	              <td><center>alewis.ppopulus@gmail.com</center></td>
+	            </tr>
+	            <tr>
+	              <td><center>Ryan Koenig</center></td>
+	              <td><center>Senior Developer</center></td>
+	              <td><center>rkoenig.ppopulus@gmail.com</center></td>
+	            </tr>
+	            <tr>
+	              <td><center>Andrew Chen</center></td>
+	              <td><center>Senior Developer</center></td>
+	              <td><center>achen.ppopulus@gmail.com</center></td>
+	            </tr>
+	            <tr>
+	              <td><center>Alexander Chen</center></td>
+	              <td><center>Senior Developer</center></td>
+	              <td><center>alchen.ppopulus@gmail.com</center></td>
+	            </tr>
+	          </tbody>
+	          <tfoot>
+	            <tr>
+	              <td></td>
+	            </tr>
+	          </tfoot>
+	        </table>
+	      </div><!--end of .table-responsive-->
+	    </div>
+	  </div>
+	</div>
 </table>
-
-</template>
-
-
-<template name="teamrow">
-   <tr>
-   	  <td>{{t.name}}</td>
-   	  <td>{{t.email}}</td>
-   </tr>
 </template>

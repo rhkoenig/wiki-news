@@ -2,12 +2,10 @@
 	margin-top:14px;
 	margin-right:150px;
 	margin-bottom:14px;
+	font-weight: bold;
+	font-stretch: expanded;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-}
 
 /* OLD FOOTER CSS
 #myFooter {

@@ -1,7 +1,9 @@
+
 <template name="submitpost">
-  <!-- Tests if user is logged in -->
+
+
   {{#if currentUser}}
-  <!-- Alert Message -->
+
   <div class="alert alert-success fade">
     <button type="button" class="close" data-dismiss="success">×</button>
     Article Submitted! <a href="/chat" class="alert-link">Read your post here..</a>
@@ -55,5 +57,6 @@
 <div class="alert alert-danger">
   <strong>Please log in to submit a post</strong>
 </div>
+
 {{/if}}
 </template>
